@@ -1,0 +1,290 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1100px;
+  max-width: 1600px;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #000000;
+}
+
+.header {
+  position: relative;
+  min-height: 800px;
+  background-color: #ffffff;
+  background-image: url("../images/background_header.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 5px;
+  overflow: hidden;
+}
+.logo {
+  position: relative;
+  width: 105px;
+  height: 39px;
+  object-fit: contain;
+  left: 30px;
+  top: 30px;
+}
+.nav {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  position: absolute;
+  top: 30px;
+  right: 26px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-link {
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.header-title {
+  position: absolute;
+  top: 183px;
+  left: 80px;
+  width: 709px;
+  max-width: calc(100% - 160px);
+  margin: 0;
+  font-size: 64px;
+  line-height: 1.05;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 700;
+}
+
+.header-title span {
+  display: block;
+}
+
+.span-accent {
+  font-family: "Noto Serif", serif;
+  color: #ff976b;
+  font-size: 58px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 72px;
+  margin-bottom: 18px;
+}
+
+.span-h1 {
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 72px;
+  letter-spacing: -1px;
+}
+
+.header-description {
+  position: absolute;
+  top: 390px;
+  left: 80px;
+  width: 683px;
+  max-width: calc(100% - 160px);
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.header-image {
+  position: absolute;
+  width: 646px;
+  height: 568px;
+  object-fit: contain;
+  right: 13px;
+  top: 100px;
+}
+
+.header-info {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #6f6f6f;
+  position: absolute;
+  left: 80px;
+  bottom: 40px;
+  width: calc(100% - 160px);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.info-text {
+  margin: 0;
+}
+
+.header-hours {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.address {
+  text-align: right;
+}
+
+.reservation {
+  padding: 80px 30px;
+  background-color: #ffd5c2;
+  text-align: center;
+}
+
+.reservation h2 {
+  margin: 0 0 30px;
+  font-size: 32px;
+}
+
+.reservation-form {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: 400px;
+
+  margin: 0 auto;
+
+  text-align: left;
+}
+
+.reservation-form label {
+  margin: 12px 0 6px;
+  font-size: 14px;
+}
+
+.reservation-form input {
+  width: 100%;
+  min-height: 40px;
+  padding: 10px;
+
+  border: 1px solid #aaa;
+  background-color: #fff;
+}
+
+.reservation-form button {
+  margin-top: 20px;
+  min-height: 42px;
+
+  border: 0;
+  background-color: #ff6b35;
+  color: #fff;
+
+  cursor: pointer;
+}
+
+.reservation-form button:hover {
+  opacity: 0.9;
+}
+
+.footer {
+  padding: 40px 30px;
+  background-color: #df5a20;
+  color: #fff;
+}
+
+@media (max-width: 1000px) {
+  .header {
+    min-height: auto;
+    padding-bottom: 120px;
+  }
+
+  .header-content {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 50px;
+  }
+
+  .header-text {
+    width: 100%;
+    max-width: 709px;
+    padding-top: 40px;
+  }
+
+  .header-image {
+    position: relative;
+
+    width: 100%;
+    max-width: 646px;
+    height: auto;
+
+    right: auto;
+    top: auto;
+
+    margin: 40px auto 0;
+  }
+
+  .header-info {
+    position: relative;
+
+    left: auto;
+    right: auto;
+    bottom: auto;
+
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding: 20px;
+  }
+
+  .nav {
+    top: 20px;
+    right: 20px;
+    gap: 12px;
+  }
+
+  .nav-link {
+    font-size: 12px;
+  }
+
+  .header-title {
+    font-size: 42px;
+  }
+
+  .span-accent {
+    font-size: 32px;
+  }
+
+  .header-description {
+    font-size: 16px;
+  }
+
+  .header-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+  }
+
+  .address {
+    text-align: left;
+  }
+}
