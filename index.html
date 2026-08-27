@@ -18,65 +18,84 @@
   <body>
     <header class="header">
       <img
-        class="logo"
+        class="header__logo"
         src="images/logo_coffeeshop_dark.svg"
         alt="Triple Espresso"
       />
 
       <nav class="nav">
-        <div class="nav-links">
-          <a class="nav-link" href="#reservation">Reservar una mesa</a>
-          <a class="nav-link" href="#footer">Contactos</a>
+        <div class="nav__links">
+          <a class="nav__link" href="#reservation">Reservar una mesa</a>
+          <a class="nav__link" href="#footer">Contactos</a>
         </div>
       </nav>
 
-      <h1 class="header-title">
-        <span class="span-accent">Café de especialidad</span>
-        <span class="span-h1">en Triple Peaks</span>
+      <h1 class="header__title">
+        <span class="header__accent">Café de especialidad</span>
+        <span class="header__h1">en Triple Peaks</span>
       </h1>
 
-      <p class="header-description">
+      <p class="header__description">
         ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos café
         para darte energía y motivar tu creatividad.
       </p>
 
       <img
-        class="header-image"
+        class="header__image"
         src="images/inside_coffee_shop.png"
         alt="Interior de la cafetería Triple Peaks"
       />
 
-      <div class="header-info">
-        <div class="header-hours">
-          <p class="info-text">Horario:</p>
-          <p class="info-text">Lunes a Viernes (de 10:00h a 19:00h)</p>
-          <p class="info-text">Sábados y Domingos (de 11:00h a 18:00h)</p>
+      <div class="header__info">
+        <div class="header__hours">
+          <p class="info__text">Horario:</p>
+          <p class="info__text">Lunes a Viernes (de 10:00h a 19:00h)</p>
+          <p class="info__text">Sábados y Domingos (de 11:00h a 18:00h)</p>
         </div>
 
-        <p class="info-text address">
-          Avenida del Éxito 200, Ciudad Triple Peaks
-        </p>
+        <p class="info__address">Avenida del Éxito 200, Ciudad Triple Peaks</p>
       </div>
     </header>
 
     <main class="content">
       <section id="reservation" class="reservation">
-        <h2>Reservar una mesa</h2>
+        <h2 class="reservation__title">Reservar una mesa</h2>
 
-        <form class="reservation-form">
-          <label for="name">Nombre</label>
-          <input id="name" type="text" placeholder="Nombre" />
+        <form class="reservation__form">
+          <label class="reservation__label" for="name">Nombre</label>
+          <input
+            class="reservation__input"
+            id="name"
+            type="text"
+            placeholder="Nombre"
+          />
 
-          <label for="people">Número de comensales</label>
-          <input id="people" type="number" placeholder="Número" />
+          <label class="reservation__label" for="people"
+            >Número de comensales</label
+          >
+          <input
+            class="reservation__input"
+            id="people"
+            type="number"
+            placeholder="Número"
+          />
 
-          <label for="date">Fecha y hora</label>
-          <input id="date" type="datetime-local" />
+          <label class="reservation__label" for="date">Fecha y hora</label>
+          <input class="reservation__input" id="date" type="datetime-local" />
 
-          <label for="email">Correo electrónico</label>
-          <input id="email" type="email" placeholder="email@gmail.com" />
+          <label class="reservation__label" for="email"
+            >Correo electrónico</label
+          >
+          <input
+            class="reservation__input"
+            id="email"
+            type="email"
+            placeholder="email@gmail.com"
+          />
 
-          <button type="submit">Reservar una mesa</button>
+          <button class="reservation__button" type="submit">
+            Reservar una mesa
+          </button>
         </form>
       </section>
     </main>

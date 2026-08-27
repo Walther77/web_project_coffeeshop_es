@@ -23,7 +23,7 @@ body {
   padding: 5px;
   overflow: hidden;
 }
-.logo {
+.header__logo {
   position: relative;
   width: 105px;
   height: 39px;
@@ -44,24 +44,24 @@ body {
   align-items: center;
   gap: 20px;
 }
-.nav-links {
+.nav__links {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-.nav-link {
+.nav__link {
   color: #000;
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
 }
 
-.nav-link:hover {
+.nav__link:hover {
   text-decoration: underline;
 }
 
-.header-title {
+.header__title {
   position: absolute;
   top: 183px;
   left: 80px;
@@ -74,11 +74,11 @@ body {
   font-weight: 700;
 }
 
-.header-title span {
+.header__title span {
   display: block;
 }
 
-.span-accent {
+.header__accent {
   font-family: "Noto Serif", serif;
   color: #ff976b;
   font-size: 58px;
@@ -88,7 +88,7 @@ body {
   margin-bottom: 18px;
 }
 
-.span-h1 {
+.header__h1 {
   font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -97,7 +97,7 @@ body {
   letter-spacing: -1px;
 }
 
-.header-description {
+.header__description {
   position: absolute;
   top: 390px;
   left: 80px;
@@ -111,7 +111,7 @@ body {
   line-height: 30px;
 }
 
-.header-image {
+.header__image {
   position: absolute;
   width: 646px;
   height: 568px;
@@ -120,7 +120,7 @@ body {
   top: 100px;
 }
 
-.header-info {
+.header__info {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
@@ -136,17 +136,17 @@ body {
   align-items: flex-end;
 }
 
-.info-text {
+.info__text {
   margin: 0;
 }
 
-.header-hours {
+.header__hours {
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
 
-.address {
+.info__address {
   text-align: right;
 }
 
@@ -156,12 +156,12 @@ body {
   text-align: center;
 }
 
-.reservation h2 {
+.reservation__title {
   margin: 0 0 30px;
   font-size: 32px;
 }
 
-.reservation-form {
+.reservation__form {
   display: flex;
   flex-direction: column;
 
@@ -173,12 +173,12 @@ body {
   text-align: left;
 }
 
-.reservation-form label {
+.reservation__label {
   margin: 12px 0 6px;
   font-size: 14px;
 }
 
-.reservation-form input {
+.reservation__input {
   width: 100%;
   min-height: 40px;
   padding: 10px;
@@ -187,7 +187,7 @@ body {
   background-color: #fff;
 }
 
-.reservation-form button {
+.reservation__button {
   margin-top: 20px;
   min-height: 42px;
 
@@ -198,7 +198,7 @@ body {
   cursor: pointer;
 }
 
-.reservation-form button:hover {
+.reservation__button:hover {
   opacity: 0.9;
 }
 
@@ -214,20 +214,7 @@ body {
     padding-bottom: 120px;
   }
 
-  .header-content {
-    display: flex;
-    flex-direction: column;
-
-    margin-top: 50px;
-  }
-
-  .header-text {
-    width: 100%;
-    max-width: 709px;
-    padding-top: 40px;
-  }
-
-  .header-image {
+  .header__image {
     position: relative;
 
     width: 100%;
@@ -240,7 +227,7 @@ body {
     margin: 40px auto 0;
   }
 
-  .header-info {
+  .header__info {
     position: relative;
 
     left: auto;
@@ -262,29 +249,29 @@ body {
     gap: 12px;
   }
 
-  .nav-link {
+  .nav__link {
     font-size: 12px;
   }
 
-  .header-title {
+  .header__title {
     font-size: 42px;
   }
 
-  .span-accent {
+  .header__accent {
     font-size: 32px;
   }
 
-  .header-description {
+  .header__description {
     font-size: 16px;
   }
 
-  .header-info {
+  .header__info {
     flex-direction: column;
     align-items: flex-start;
     gap: 25px;
   }
 
-  .address {
+  .info__address {
     text-align: left;
   }
 }
